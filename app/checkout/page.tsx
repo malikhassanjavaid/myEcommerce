@@ -5,6 +5,7 @@ import { useCartStore } from "@/store/cart-store";
 import { Trash2 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { checkoutAction } from "./checkout-section";
 
 export default function CheckoutPage() {
   const router = useRouter();
@@ -99,12 +100,13 @@ export default function CheckoutPage() {
       </div>
 
       {/* Subtotal and Action Buttons */}
-     <form className="flex justify-end">
+     <form action={checkoutAction} className="flex justify-end">
   <div className="w-full max-w-md bg-gray-50 p-6 rounded-lg shadow-lg space-y-4">
     <div className="flex justify-between text-xl font-semibold text-gray-800">
       <span>Subtotal</span>
       <span>${(total / 100).toFixed(2)}</span>
     </div>
+    <input type="hidden" name="items" value={JSON.stringify(items)}/>
     <div className="space-y-3 pt-4">
       <Button type="submit" className="w-full cursor-pointer">
         Proceed to Checkout

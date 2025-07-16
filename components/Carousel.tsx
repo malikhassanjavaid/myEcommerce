@@ -81,8 +81,6 @@ export default function InfiniteScrollSlider({ products }: Props) {
         })}
       </div>
     </div>
-    {/* Bottom glowing shadow */}
-    <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-black to-transparent z-10 rounded-b-2xl" />
   </div>
 )
 }
