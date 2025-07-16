@@ -6,6 +6,7 @@ import { Trash2 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { checkoutAction } from "./checkout-section";
+import Link from "next/link";
 
 export default function CheckoutPage() {
   const router = useRouter();
@@ -57,7 +58,11 @@ export default function CheckoutPage() {
                 )}
               </div>
               <div>
-                <p className="text-lg font-semibold text-gray-800">{item.name}</p>
+                <Link 
+                className="text-lg font-semibold text-gray-800" 
+                href={`/products/${item.id}`}>
+                {item.name}
+                </Link>
                 <p className="text-sm text-gray-500">
                   ${(item.price / 100).toFixed(2)} x {item.quantity}
                 </p>
