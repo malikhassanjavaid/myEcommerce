@@ -82,7 +82,7 @@ export default function ProductDetailsPage({ product }: Props) {
             </div>
             <button
               onClick={closeNotification}
-              className="flex-shrink-0 p-1 hover:bg-gray-100 rounded-full transition-colors"
+              className="flex-shrink-0 p-1 hover:bg-gray-100 rounded-full transition-colors cursor-pointer"
             >
               <X className="w-4 h-4 text-gray-500" />
             </button>

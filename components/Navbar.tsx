@@ -1,7 +1,7 @@
 'use client'
 
 import { useCartStore } from '@/store/cart-store'
-import { Menu, X, ShoppingCart } from 'lucide-react'
+import { Menu, X, ShoppingCart, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -60,7 +60,7 @@ export default function Navbar() {
             <Link href="/checkout" className="relative group">
               <div className="relative">
                 <div className="w-11 h-11 bg-white dark:bg-gray-900 rounded-xl flex items-center justify-center border-2 border-gray-200 dark:border-gray-700 group-hover:border-pink-300 dark:group-hover:border-pink-600 shadow-sm group-hover:shadow-md transition-all duration-300">
-                  <ShoppingCart className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300" />
+                  <ShoppingBag className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300" />
                 </div>
                 {cartCount > 0 && (
                   <div className="absolute -top-1 -right-1 min-w-[18px] h-[18px] bg-pink-600 dark:bg-pink-500 text-white text-xs font-semibold rounded-full flex items-center justify-center px-1 shadow-lg border-2 border-white dark:border-gray-950">
