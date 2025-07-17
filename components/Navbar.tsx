@@ -46,9 +46,9 @@ export default function Navbar() {
                   >
                     {link.label}
                     {isActive && (
-                      <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-pink-600 dark:bg-pink-400 rounded-full"></div>
+                      <div className="absolute -bottom-0 left-0 right-0 h-0.5 bg-pink-600 dark:bg-pink-400 rounded-full"></div>
                     )}
-                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-pink-600 dark:bg-pink-400 rounded-full transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
+                    <div className="absolute -bottom-0 left-0 right-0 h-0.5 bg-pink-600 dark:bg-pink-400 rounded-full transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
                   </Link>
                 )
               })}

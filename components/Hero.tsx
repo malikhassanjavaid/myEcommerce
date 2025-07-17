@@ -5,40 +5,15 @@ import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white dark:bg-gray-900">
-      {/* Subtle Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-pink-50 dark:bg-pink-900/20 rounded-full blur-3xl opacity-40" />
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gray-50 dark:bg-gray-700 rounded-full blur-3xl opacity-30" />
-      </div>
-
       {/* Grid Container */}
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-16 py-16">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 py-12">
         {/* Left: Text Content */}
-        <div className="text-center lg:text-left space-y-8 z-10">
-          {/* Badge */}
-          <div className="relative inline-flex items-center">
-            <div className="flex items-center px-5 py-2.5 bg-gradient-to-r from-gray-500 to-gray-600 dark:from-emerald-400 dark:to-teal-500 rounded-full border-2 border-white/20 backdrop-blur-sm">
-              <div className="relative mr-3">
-                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                <div className="absolute inset-0 w-2 h-2 bg-white rounded-full animate-ping opacity-30"></div>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wide">
-                NEW COLLECTION
-              </span>
-            </div>
-          </div>
-
+        <div className="text-left space-y-8 mt-12">
           {/* Main Heading */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white">
               Discover <span className="text-pink-600 dark:text-pink-400">Your Style</span>
             </h1>
-            
-            <div className="flex items-center justify-center lg:justify-start space-x-2 mt-4">
-              <div className="h-1 w-12 bg-pink-600 dark:bg-pink-400 rounded-full" />
-              <div className="h-1 w-8 bg-pink-400 dark:bg-pink-500 rounded-full" />
-              <div className="h-1 w-4 bg-pink-300 dark:bg-pink-600 rounded-full" />
-            </div>
           </div>
 
           {/* Supporting Paragraph */}
@@ -58,12 +33,6 @@ export default function HeroSection() {
                   </svg>
                 </div>
               </Link>
-            </Button>
-            
-            <Button variant="outline" className="group px-8 py-6 text-lg font-semibold border-2 border-pink-300 dark:border-pink-600 hover:border-pink-600 dark:hover:border-pink-400 hover:bg-pink-50 dark:hover:bg-pink-900/20 rounded-lg transition-all duration-300">
-              <span className="text-pink-700 dark:text-pink-300 group-hover:text-pink-800 dark:group-hover:text-pink-200">
-                Learn More
-              </span>
             </Button>
           </div>
 

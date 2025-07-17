@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function ProductsList({ products }: Props) {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState<string>("")
 
   const filtered = products.filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase())
@@ -23,6 +23,8 @@ export default function ProductsList({ products }: Props) {
       <input
         type="text"
         placeholder="Search"
+        value={search || ""}
+        onChange={(e) => setSearch(e.target.value || "")}
         className="w-full pl-5 pr-14 py-3 rounded-full bg-white shadow-md border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent transition"
       />
       <button
