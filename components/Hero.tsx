@@ -98,8 +98,8 @@ export default function HeroSection() {
             </div>
 
             {/* Decorative lines */}
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-600 rounded-full opacity-60" />
-            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-400 to-cyan-600 rounded-full opacity-50" />
+            <div className="absolute -top-6 right-45 -translate-x-1/2 w-22 h-1 bg-gradient-to-r from-pink-400 to-purple-600 rounded-full opacity-60" />
+            <div className="absolute bottom-11 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-400 to-cyan-600 rounded-full opacity-50" />
           </div>
         </div>
       </div>
