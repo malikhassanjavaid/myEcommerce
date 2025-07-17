@@ -14,26 +14,49 @@ export default function SuccessPage() {
   },[clearCart])
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center bg-gray-50 px-4">
-      <div className="bg-white shadow-lg rounded-xl p-10 max-w-xl w-full text-center space-y-6">
-        <CheckCircle className="mx-auto text-green-500" size={60} />
-        <h1 className="text-3xl font-bold text-gray-800">Payment Successful!</h1>
-        <p className="text-gray-600 text-lg">
-          Thank you for your purchase. Your order is being processed and you’ll receive a confirmation email soon.
-        </p>
+    <div className="min-h-screen flex items-center justify-center px-4">
+      <div className="max-w-md w-full text-center space-y-8">
+        {/* Success Icon */}
+        <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+          <CheckCircle className="w-10 h-10 text-green-500" />
+        </div>
 
-        <div className="border-t pt-6 text-left text-sm text-gray-500">
-          <p className="mb-1">
-            <span className="font-medium text-gray-700">Order ID:</span> #123456789
-          </p>
-          <p>
-            <span className="font-medium text-gray-700">Estimated Delivery:</span> 3-5 business days
+        {/* Content */}
+        <div className="space-y-4">
+          <h1 className="text-3xl font-bold text-gray-900">Order Confirmed</h1>
+          <p className="text-gray-600">
+            Thank you for your purchase. You'll receive a confirmation email shortly.
           </p>
         </div>
 
-        <Button className="w-full" onClick={() => router.push("/products")}>
-          Continue Shopping
-        </Button>
+        {/* Order Info */}
+        <div className="bg-gray-50 rounded-lg p-4 space-y-2 text-sm">
+          <div className="flex justify-between">
+            <span className="text-gray-500">Order ID:</span>
+            <span className="font-medium">#ORD-123456</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-gray-500">Delivery:</span>
+            <span className="font-medium">3-5 business days</span>
+          </div>
+        </div>
+
+        {/* Actions */}
+        <div className="space-y-3">
+          <Button 
+            className="w-full bg-pink-600 hover:bg-pink-700 text-white cursor-pointer" 
+            onClick={() => router.push("/products")}
+          >
+            Continue Shopping
+          </Button>
+          <Button 
+            variant="outline" 
+            className="w-full cursor-pointer"
+            onClick={() => router.push("/")}
+          >
+            Back to Home
+          </Button>
+        </div>
       </div>
     </div>
   );

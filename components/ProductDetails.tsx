@@ -175,7 +175,7 @@ export default function ProductDetailsPage({ product }: Props) {
               ) : (
                 <>
                   <ShoppingBag className="w-5 h-5" />
-                  Add to Bucket
+                  Add to Basket
                 </>
               )}
             </Button>

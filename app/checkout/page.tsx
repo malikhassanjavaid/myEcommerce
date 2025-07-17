@@ -21,7 +21,7 @@ export default function CheckoutPage() {
         <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
           <ShoppingBag className="w-8 h-8 text-gray-400" />
         </div>
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Your Cart is Empty</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Your <span className="text-pink-600">Basket</span> is Empty</h1>
         <p className="text-gray-600 mb-6">Looks like you haven't added anything yet.</p>
         <Button 
           className="bg-pink-600 hover:bg-pink-700 text-white cursor-pointer"
@@ -36,7 +36,7 @@ export default function CheckoutPage() {
   return (
     <div className="py-8 space-y-8">
       <div className="max-w-screen-2xl mx-auto space-y-8">
-        <h1 className="text-4xl font-bold text-gray-900">Shopping Cart</h1>
+        <h1 className="text-4xl font-bold text-gray-900">Shopping Basket</h1>
 
         <div className="hidden md:grid grid-cols-12 font-medium text-gray-500 border-b pb-4">
           <div className="col-span-6">Product</div>
