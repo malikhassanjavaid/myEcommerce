@@ -66,7 +66,7 @@ export default function ProductDetailsPage({ product }: Props) {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 relative">
+    <div className="max-w-5xl mx-auto px-4 py-8 relative">
       {/* Success Notification */}
       {showNotification && (
         <div className="fixed top-6 right-6 z-50 animate-in slide-in-from-top-2 duration-300">

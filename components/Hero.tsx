@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="text-center lg:text-left space-y-8 z-10">
           {/* Badge */}
           <div className="relative inline-flex items-center">
-            <div className="flex items-center px-5 py-2.5 bg-gradient-to-r from-gray-500 to-gray-600 dark:from-emerald-400 dark:to-teal-500 rounded-full shadow-xl border-2 border-white/20 backdrop-blur-sm">
+            <div className="flex items-center px-5 py-2.5 bg-gradient-to-r from-gray-500 to-gray-600 dark:from-emerald-400 dark:to-teal-500 rounded-full border-2 border-white/20 backdrop-blur-sm">
               <div className="relative mr-3">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                 <div className="absolute inset-0 w-2 h-2 bg-white rounded-full animate-ping opacity-30"></div>
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
           {/* Main Heading */}
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white">
               Discover <span className="text-pink-600 dark:text-pink-400">Your Style</span>
             </h1>
             
@@ -42,7 +42,7 @@ export default function HeroSection() {
           </div>
 
           {/* Supporting Paragraph */}
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p className="text-xl md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Explore premium fashion pieces that blend modern aesthetics with timeless elegance. 
             Crafted for those who appreciate <span className="text-pink-600 dark:text-pink-400 font-medium">quality and style</span>.
           </p>
