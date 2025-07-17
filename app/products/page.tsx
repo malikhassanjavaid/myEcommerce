@@ -7,19 +7,23 @@ export default async function ProductsPage() {
   })
 
   return (
-    <main className="bg-gray-50 dark:bg-black min-h-screen">
-      <section className="py-12 text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Explore Our Products
-        </h1>
-        <p className="mt-2 text-gray-600 dark:text-gray-400">
-          Handpicked items, just for you
-        </p>
-      </section>
+    <div className="bg-white dark:bg-gray-900 min-h-screen -mx-4 sm:-mx-6 lg:-mx-8">
+      <div className="px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-screen-2xl mx-auto">
 
-      <section className="max-w-7xl mx-auto pb-24">
-        <ProductsList products={products.data} />
-      </section>
-    </main>
+          {/* Unique Styled Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+              Discover <span className="text-pink-600">Curated Essentials</span>
+            </h2>
+            <p className="mt-2 text-gray-600 dark:text-gray-400 text-lg">
+              Handpicked products crafted to match your taste.
+            </p>
+          </div>
+
+          <ProductsList products={products.data} />
+        </div>
+      </div>
+    </div>
   )
 }

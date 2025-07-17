@@ -12,9 +12,9 @@ export default async function Home() {
   })
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-indigo-500/10 dark:from-pink-500/5 dark:via-purple-500/5 dark:to-indigo-500/5" />
         <div className="relative">
           <HeroSection />
@@ -22,9 +22,9 @@ export default async function Home() {
       </div>
 
       {/* Featured Products Section */}
-      <section className="relative py-24 px-6 md:px-12 lg:px-24">
+      <section className="relative py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-transparent dark:via-gray-900/50" />
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent mb-4">
@@ -42,37 +42,10 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="relative py-20 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-3xl blur-2xl opacity-20 dark:opacity-10" />
-            <div className="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl p-12 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                Ready to Shop?
-              </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                Explore our full collection of premium products and find exactly what you're looking for
-              </p>
-              <Link href="/products">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                >
-                  Browse All Products
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-16 bg-gradient-to-r from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group">
               <div className="bg-gradient-to-r from-pink-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -104,6 +77,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   )
 }

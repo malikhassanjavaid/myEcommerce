@@ -26,7 +26,8 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto py-12 space-y-8">
+    <div className="py-12 space-y-8 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto space-y-8">
       <h1 className="text-4xl font-bold text-gray-900">Shopping Basket</h1>
 
       <div className="hidden md:grid grid-cols-12 font-medium text-gray-500 border-b pb-4">
@@ -127,6 +128,7 @@ export default function CheckoutPage() {
     </div>
   </div>
 </form>
+      </div>
     </div>
   );
 }
