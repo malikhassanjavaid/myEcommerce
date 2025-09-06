@@ -1,3 +1,5 @@
+// /products/[id]/page.tsx
+
 import ProductDetailsPage from "@/components/ProductDetails"
 import { stripe } from "@/lib/stripe"
 

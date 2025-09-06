@@ -1,9 +1,8 @@
+// /page.tsx
+
 import CarouselPage from "@/components/Carousel"
 import HeroSection from "@/components/Hero"
-import { Button } from "@/components/ui/button"
 import { stripe } from "@/lib/stripe"
-import Image from "next/image"
-import Link from "next/link"
 
 export default async function Home() {
   const products = await stripe.products.list({
